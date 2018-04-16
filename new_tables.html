@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Bootstrap Material Admin by Bootstrapious.com</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="page">
+        <!-- Main Navbar-->
+        <header class="header">
+            <nav class="navbar">
+                <!-- Search Box-->
+                <div class="search-box">
+                    <button class="dismiss">
+                        <i class="icon-close"></i>
+                    </button>
+                    <form id="searchForm" action="#" role="search">
+                        <input type="search" placeholder="What are you looking for..." class="form-control">
+                    </form>
+                </div>
+                <div class="container-fluid">
+                    <div class="navbar-holder d-flex align-items-center justify-content-between">
+                        <!-- Navbar Header-->
+                        <div class="navbar-header">
+                            <!-- Navbar Brand -->
+                            <a href="index.html" class="navbar-brand">
+                                <div class="brand-text brand-big">
+                                    <span>Bootstrap </span>
+                                    <strong>Dashboard</strong>
+                                </div>
+                                <div class="brand-text brand-small">
+                                    <strong>BD</strong>
+                                </div>
+                            </a>
+                            <!-- Toggle Button-->
+                            <a id="toggle-btn" href="#" class="menu-btn active">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <!-- Navbar Menu -->
+                        <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                            <!-- Search-->
+                            <li class="nav-item d-flex align-items-center">
+                                <a id="search" href="#">
+                                    <i class="icon-search"></i>
+                                </a>
+                            </li>
+                            <!-- Notifications-->
+                            <li class="nav-item dropdown">
+                                <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    class="nav-link">
+                                    <i class="fa fa-bell-o"></i>
+                                    <span class="badge bg-red badge-corner">12</span>
+                                </a>
+                                <ul aria-labelledby="notifications" class="dropdown-menu">
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item">
+                                            <div class="notification">
+                                                <div class="notification-content">
+                                                    <i class="fa fa-envelope bg-green"></i>You have 6 new messages </div>
+                                                <div class="notification-time">
+                                                    <small>4 minutes ago</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item">
+                                            <div class="notification">
+                                                <div class="notification-content">
+                                                    <i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
+                                                <div class="notification-time">
+                                                    <small>4 minutes ago</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item">
+                                            <div class="notification">
+                                                <div class="notification-content">
+                                                    <i class="fa fa-upload bg-orange"></i>Server Rebooted</div>
+                                                <div class="notification-time">
+                                                    <small>4 minutes ago</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item">
+                                            <div class="notification">
+                                                <div class="notification-content">
+                                                    <i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
+                                                <div class="notification-time">
+                                                    <small>10 minutes ago</small>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
+                                            <strong>view all notifications </strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Messages                        -->
+                            <li class="nav-item dropdown">
+                                <a id="messages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    class="nav-link">
+                                    <i class="fa fa-envelope-o"></i>
+                                    <span class="badge bg-orange badge-corner">10</span>
+                                </a>
+                                <ul aria-labelledby="notifications" class="dropdown-menu">
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item d-flex">
+                                            <div class="msg-profile">
+                                                <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle">
+                                            </div>
+                                            <div class="msg-body">
+                                                <h3 class="h5">Jason Doe</h3>
+                                                <span>Sent You Message</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item d-flex">
+                                            <div class="msg-profile">
+                                                <img src="img/avatar-2.jpg" alt="..." class="img-fluid rounded-circle">
+                                            </div>
+                                            <div class="msg-body">
+                                                <h3 class="h5">Frank Williams</h3>
+                                                <span>Sent You Message</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item d-flex">
+                                            <div class="msg-profile">
+                                                <img src="img/avatar-3.jpg" alt="..." class="img-fluid rounded-circle">
+                                            </div>
+                                            <div class="msg-body">
+                                                <h3 class="h5">Ashley Wood</h3>
+                                                <span>Sent You Message</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
+                                            <strong>Read all messages </strong>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Languages dropdown    -->
+                            <li class="nav-item dropdown">
+                                <a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                                    class="nav-link language dropdown-toggle">
+                                    <img src="img/flags/16/GB.png" alt="English">
+                                    <span class="d-none d-sm-inline-block">English</span>
+                                </a>
+                                <ul aria-labelledby="languages" class="dropdown-menu">
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item">
+                                            <img src="img/flags/16/DE.png" alt="English" class="mr-2">German</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" href="#" class="dropdown-item">
+                                            <img src="img/flags/16/FR.png" alt="English" class="mr-2">French </a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- Logout    -->
+                            <li class="nav-item">
+                                <a href="login.html" class="nav-link logout">Logout
+                                    <i class="fa fa-sign-out"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="page-content d-flex align-items-stretch">
+            <!-- Side Navbar -->
+            <nav class="side-navbar">
+                <!-- Sidebar Header-->
+                <div class="sidebar-header d-flex align-items-center">
+                    <div class="avatar">
+                        <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle">
+                    </div>
+                    <div class="title">
+                        <h1 class="h4">Mark Stephen</h1>
+                        <p>Web Designer</p>
+                    </div>
+                </div>
+                <!-- Sidebar Navidation Menus-->
+                <span class="heading">Main</span>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="index.html">
+                            <i class="icon-home"></i>Home </a>
+                    </li>
+                    <li class="active">
+                        <a href="tables.html">
+                            <i class="icon-grid"></i>Tables </a>
+                    </li>
+                    <li>
+                        <a href="charts.html">
+                            <i class="fa fa-bar-chart"></i>Charts </a>
+                    </li>
+                    <li>
+                        <a href="forms.html">
+                            <i class="icon-padnote"></i>Forms </a>
+                    </li>
+                    <li>
+                        <a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse">
+                            <i class="icon-interface-windows"></i>Example dropdown </a>
+                        <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                            <li>
+                                <a href="#">Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Page</a>
+                            </li>
+                            <li>
+                                <a href="#">Page</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <i class="icon-interface-windows"></i>Login page </a>
+                    </li>
+                </ul>
+                <span class="heading">Extras</span>
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="#">
+                            <i class="icon-flask"></i>Demo </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-screen"></i>Demo </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-mail"></i>Demo </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="icon-picture"></i>Demo </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="content-inner">
+                <!-- Page Header-->
+                <header class="page-header">
+                    <div class="container-fluid">
+                        <h2 class="no-margin-bottom">Tables</h2>
+                    </div>
+                </header>
+                <!-- Breadcrumb-->
+                <div class="breadcrumb-holder container-fluid">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li class="breadcrumb-item active">Tables </li>
+                    </ul>
+                </div>
+                <section class="tables">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header d-flex align-items-center">
+                                        <h3 class="h4">Formulário de cadastro</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#formPaciente" aria-expanded="false" data-toggle="collapse">
+                                                    Informações sobre o paciente </a>
+                                                <ul id="formPaciente" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-close">
+                                                                <div class="dropdown">
+                                                                    <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                                        <i class="fa fa-ellipsis-v"></i>
+                                                                    </button>
+                                                                    <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow">
+                                                                        <a href="#" class="dropdown-item remove">
+                                                                            <i class="fa fa-times"></i>Close</a>
+                                                                        <a href="#" class="dropdown-item edit">
+                                                                            <i class="fa fa-gear"></i>Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados do paciente</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form class="form-horizontal">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-1 form-control-label">Nome</label>
+                                                                        <div class="col-sm-5">
+                                                                            <input id="inputHorizontalSuccess" type="text" placeholder="Nome" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-2 form-control-label">Possui nome social?</label>
+                                                                        <div class="col-sm-4 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>NÃO</option>
+                                                                                <option>SIM</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 form-control-label">Gostaria de usar o nome social?</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>NÃO</option>
+                                                                                <option>SIM</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Nome social</label>
+                                                                        <div class="col-sm-6">
+                                                                            <input id="input" type="text" placeholder="Nome social" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-1 form-control-label">CPF</label>
+                                                                        <div class="col-sm-3">
+                                                                            <input id="inputCPF" type="text" placeholder="CPF" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-2 form-control-label">Identidade</label>
+                                                                        <div class="col-sm-2">
+                                                                            <input id="inputIdentidade" type="text" placeholder="Identidade" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-2 form-control-label">Órgão expedidor</label>
+                                                                        <div class="col-sm-2">
+                                                                            <input id="inputOrgaoExpedidor" type="text" placeholder="Órgão expedidor" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-1 form-control-label">Sexo</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>Masculino</option>
+                                                                                <option>Feminino</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="col-sm-2 form-control-label">Data de nascimento</label>
+                                                                        <div class="col-sm-2">
+                                                                            <input id="inputNascimento" type="text" placeholder="dd/mm/aaaa" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Idade</label>
+                                                                        <div class="col-sm-1">
+                                                                            <input id="inputIdade" type="text" placeholder="" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-1 form-control-label">Cor/Raça</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>Branca</option>
+                                                                                <option>Negra</option>
+                                                                                <option>Amarela</option>
+                                                                                <option>Indígena</option>
+                                                                                <option>Não declarada</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Estado civil</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>Solteiro (a)</option>
+                                                                                <option>Casado (a)</option>
+                                                                                <option>Divorciado (a)</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="col-sm-2 form-control-label">Deseja prestar informação sobre gênero?</label>
+                                                                        <div class="col-sm-1 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>SIM</option>
+                                                                                <option>NÃO</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Gênero</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputGenero" type="text" placeholder="Gênero" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-1 form-control-label">CEP</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputCEP" type="text" placeholder="CEP" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Logradouro</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputLogradouro" type="text" placeholder="Rua/avenida" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Bairro</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputBairro" type="text" placeholder="Bairro" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Cidade</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputCidade" type="text" placeholder="Cidade" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-2 form-control-label">Telefone 1</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputTelefone" type="text" placeholder="Telefone " class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-2 form-control-label">Telefone 2</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputTelefone2" type="text" placeholder="Telefone " class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">E-mail</label>
+                                                                        <div class="col-sm-3 select">
+                                                                            <input id="inputEmail" type="email" placeholder="E-mail " class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-1 form-control-label">Vínculo com a UFRN</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>Não possui</option>
+                                                                                <option>Servidor ativo</option>
+                                                                                <option>Aluno</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                            </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#formSaude" aria-expanded="false" data-toggle="collapse">
+                                                    Informações relacionadas a saúde </a>
+                                                <ul id="formSaude" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-close">
+                                                                <div class="dropdown">
+                                                                    <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                                        <i class="fa fa-ellipsis-v"></i>
+                                                                    </button>
+                                                                    <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow">
+                                                                        <a href="#" class="dropdown-item remove">
+                                                                            <i class="fa fa-times"></i>Close</a>
+                                                                        <a href="#" class="dropdown-item edit">
+                                                                            <i class="fa fa-gear"></i>Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados relacionados à saúde do paciente</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form class="form-horizontal">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-1 form-control-label">Cartão do SUS</label>
+                                                                        <div class="col-sm-2">
+                                                                            <input id="inputSUS" type="text" placeholder="Número do cartão do SUS" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-3 form-control-label">Unidade básica de saúde da qual é usuário</label>
+                                                                        <div class="col-sm-6">
+                                                                            <input id="inputUBS" type="text" placeholder="Unidade básica de saúde da qual é usuário" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#formSocioeconomico" aria-expanded="false" data-toggle="collapse">
+                                                    Informações socioeconomicas </a>
+                                                <ul id="formSocioeconomico" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-close">
+                                                                <div class="dropdown">
+                                                                    <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                                        <i class="fa fa-ellipsis-v"></i>
+                                                                    </button>
+                                                                    <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow">
+                                                                        <a href="#" class="dropdown-item remove">
+                                                                            <i class="fa fa-times"></i>Close</a>
+                                                                        <a href="#" class="dropdown-item edit">
+                                                                            <i class="fa fa-gear"></i>Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados socioeconomicos do paciente</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form class="form-horizontal">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-1 form-control-label">Escolaridade</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>Fundamental</option>
+                                                                                <option>Médio</option>
+                                                                                <option>Superior</option>
+                                                                                <option>Não tenho</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Curso</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputCurso" type="text" placeholder="Curso" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Profissão</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputProfissão" type="text" placeholder="Profissão" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Ocupação atual</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputOcupacao" type="text" placeholder="Ocupação atual" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-3 form-control-label">Quantidade de pessoas que moram na residência</label>
+                                                                        <div class="col-sm-1 select">
+                                                                            <input id="inputQtdPessoas" type="text" placeholder="" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-2 form-control-label">Quantas trabalham?</label>
+                                                                        <div class="col-sm-1 select">
+                                                                            <input id="inputQtdTrabalham" type="text" placeholder="" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-2 form-control-label">Renda total</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputRenda" type="text" placeholder="Renda total" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-2 form-control-label">Possui algum benefício social?</label>
+                                                                        <div class="col-sm-1 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>SIM</option>
+                                                                                <option>NÃO</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="col-sm-2 form-control-label">Qual benefício?</label>
+                                                                        <div class="col-sm-3 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>Bolsa família</option>
+                                                                                <option>XXXXXXXXXXXXXX</option>
+                                                                                <option>Outros benefícios</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                            <li>
+                                                <a href="#formResponsavel" aria-expanded="false" data-toggle="collapse">
+                                                    Informações sobre o responsável </a>
+                                                <ul id="formResponsavel" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-close">
+                                                                <div class="dropdown">
+                                                                    <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
+                                                                        <i class="fa fa-ellipsis-v"></i>
+                                                                    </button>
+                                                                    <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow">
+                                                                        <a href="#" class="dropdown-item remove">
+                                                                            <i class="fa fa-times"></i>Close</a>
+                                                                        <a href="#" class="dropdown-item edit">
+                                                                            <i class="fa fa-gear"></i>Edit</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados do responsável pelo paciente</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form class="form-horizontal">
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-1 form-control-label">Responsável pela pessoa atendida</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <select name="account" class="form-control">
+                                                                                <option>Familiar</option>
+                                                                                <option>Profissional</option>
+                                                                                <option>Tutor</option>
+                                                                                <option>Amigo</option>
+                                                                                <option>Própria pessoa</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <label class="col-sm-1 form-control-label">Nome </label>
+                                                                        <div class="col-sm-4 select">
+                                                                            <input id="inputResponsavel" type="text" placeholder="Nome do responsável" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-group row">
+                                                                        <label class="col-sm-1 form-control-label">Identidade</label>
+                                                                        <div class="col-sm-2 select">
+                                                                            <input id="inputIdResponsavel" type="text" placeholder="Identidade do responsável" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <label class="col-sm-2 form-control-label">Órgão expedidor</label>
+                                                                        <div class="col-sm-3 select">
+                                                                            <input id="inputOrgaoExpResponsavel" type="text" placeholder="Órgão expedidor do RG do responsável" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-4 offset-sm-3">
+                            <button type="submit" class="btn btn-secondary">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Cadastrar!</button>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+</body>
+
+</html>
