@@ -19,7 +19,7 @@
     <!-- theme stylesheet-->
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
     <!-- Custom stylesheet - for your changes-->
-    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/custom3.css">
     <!-- Favicon-->
     <link rel="shortcut icon" href="img/favicon.ico">
     <!-- Tweaks for older IEs-->
@@ -32,180 +32,41 @@
     <div class="page">
         <!-- Main Navbar-->
         <header class="header">
-            <nav class="navbar">
-                <!-- Search Box-->
-                <div class="search-box">
-                    <button class="dismiss">
-                        <i class="icon-close"></i>
-                    </button>
-                    <form id="searchForm" action="#" role="search">
-                        <input type="search" placeholder="What are you looking for..." class="form-control">
-                    </form>
-                </div>
-                <div class="container-fluid">
-                    <div class="navbar-holder d-flex align-items-center justify-content-between">
-                        <!-- Navbar Header-->
-                        <div class="navbar-header">
-                            <!-- Navbar Brand -->
-                            <a href="index.html" class="navbar-brand">
-                                <div class="brand-text brand-big">
-                                    <span>Bootstrap </span>
-                                    <strong>Dashboard</strong>
-                                </div>
-                                <div class="brand-text brand-small">
-                                    <strong>BD</strong>
-                                </div>
-                            </a>
-                            <!-- Toggle Button-->
-                            <a id="toggle-btn" href="#" class="menu-btn active">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </a>
-                        </div>
-                        <!-- Navbar Menu -->
-                        <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
-                            <!-- Search-->
-                            <li class="nav-item d-flex align-items-center">
-                                <a id="search" href="#">
-                                    <i class="icon-search"></i>
-                                </a>
-                            </li>
-                            <!-- Notifications-->
-                            <li class="nav-item dropdown">
-                                <a id="notifications" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    class="nav-link">
-                                    <i class="fa fa-bell-o"></i>
-                                    <span class="badge bg-red badge-corner">12</span>
-                                </a>
-                                <ul aria-labelledby="notifications" class="dropdown-menu">
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item">
-                                            <div class="notification">
-                                                <div class="notification-content">
-                                                    <i class="fa fa-envelope bg-green"></i>You have 6 new messages </div>
-                                                <div class="notification-time">
-                                                    <small>4 minutes ago</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item">
-                                            <div class="notification">
-                                                <div class="notification-content">
-                                                    <i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
-                                                <div class="notification-time">
-                                                    <small>4 minutes ago</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item">
-                                            <div class="notification">
-                                                <div class="notification-content">
-                                                    <i class="fa fa-upload bg-orange"></i>Server Rebooted</div>
-                                                <div class="notification-time">
-                                                    <small>4 minutes ago</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item">
-                                            <div class="notification">
-                                                <div class="notification-content">
-                                                    <i class="fa fa-twitter bg-blue"></i>You have 2 followers</div>
-                                                <div class="notification-time">
-                                                    <small>10 minutes ago</small>
-                                                </div>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
-                                            <strong>view all notifications </strong>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- Messages                        -->
-                            <li class="nav-item dropdown">
-                                <a id="messages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    class="nav-link">
-                                    <i class="fa fa-envelope-o"></i>
-                                    <span class="badge bg-orange badge-corner">10</span>
-                                </a>
-                                <ul aria-labelledby="notifications" class="dropdown-menu">
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item d-flex">
-                                            <div class="msg-profile">
-                                                <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle">
-                                            </div>
-                                            <div class="msg-body">
-                                                <h3 class="h5">Jason Doe</h3>
-                                                <span>Sent You Message</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item d-flex">
-                                            <div class="msg-profile">
-                                                <img src="img/avatar-2.jpg" alt="..." class="img-fluid rounded-circle">
-                                            </div>
-                                            <div class="msg-body">
-                                                <h3 class="h5">Frank Williams</h3>
-                                                <span>Sent You Message</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item d-flex">
-                                            <div class="msg-profile">
-                                                <img src="img/avatar-3.jpg" alt="..." class="img-fluid rounded-circle">
-                                            </div>
-                                            <div class="msg-body">
-                                                <h3 class="h5">Ashley Wood</h3>
-                                                <span>Sent You Message</span>
-                                            </div>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item all-notifications text-center">
-                                            <strong>Read all messages </strong>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- Languages dropdown    -->
-                            <li class="nav-item dropdown">
-                                <a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
-                                    class="nav-link language dropdown-toggle">
-                                    <img src="img/flags/16/GB.png" alt="English">
-                                    <span class="d-none d-sm-inline-block">English</span>
-                                </a>
-                                <ul aria-labelledby="languages" class="dropdown-menu">
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item">
-                                            <img src="img/flags/16/DE.png" alt="English" class="mr-2">German</a>
-                                    </li>
-                                    <li>
-                                        <a rel="nofollow" href="#" class="dropdown-item">
-                                            <img src="img/flags/16/FR.png" alt="English" class="mr-2">French </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <!-- Logout    -->
-                            <li class="nav-item">
-                                <a href="login.html" class="nav-link logout">Logout
-                                    <i class="fa fa-sign-out"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
+                    <nav class="navbar">
+          <!-- Search Box-->
+          <div class="search-box">
+            <button class="dismiss"><i class="icon-close"></i></button>
+            <form id="searchForm" action="#" role="search">
+              <input type="search" placeholder="What are you looking for..." class="form-control">
+            </form>
+          </div>
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
+                  <div class="brand-text brand-big"><span>Sig</span><strong>Saúde</strong></div>
+                  <div class="brand-text brand-small"><strong>SS</strong></div></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+              </div>
+              <!-- Navbar Menu -->
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Search-->
+                <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li>
+            
+                <!-- Languages dropdown    -->
+                <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="img/flags/16/BR.png" alt="Português"><span class="d-none d-sm-inline-block">Português</span></a>
+                  <ul aria-labelledby="languages" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/DE.png" alt="English" class="mr-2">German</a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/FR.png" alt="English" class="mr-2">French                                         </a></li>
+                  </ul>
+                </li>
+                <!-- Logout    -->
+                <li class="nav-item"><a href="login.html" class="nav-link logout">Logout<i class="fa fa-sign-out"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
         </header>
         <div class="page-content d-flex align-items-stretch">
             <!-- Side Navbar -->
@@ -213,75 +74,26 @@
                 <!-- Sidebar Header-->
                 <div class="sidebar-header d-flex align-items-center">
                     <div class="avatar">
-                        <img src="img/avatar-1.jpg" alt="..." class="img-fluid rounded-circle">
+                        <img src="img/user.png" alt="..." class="img-fluid rounded-circle">
                     </div>
                     <div class="title">
-                        <h1 class="h4">Mark Stephen</h1>
-                        <p>Web Designer</p>
+                        <h1 class="h4">Itamir Filho</h1>
+                        <p>Especialidade</p>
                     </div>
                 </div>
-                <!-- Sidebar Navidation Menus-->
-                <span class="heading">Main</span>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="index.html">
-                            <i class="icon-home"></i>Home </a>
-                    </li>
-                    <li class="active">
-                        <a href="sigsaude_form.html">
-                            <i class="icon-grid"></i>Cadastro de pacientes </a>
-                    </li>
-                    <li>
-                        <a href="tables.html">
-                            <i class="icon-grid"></i>Tables </a>
-                    </li>
-                    <li>
-                        <a href="charts.html">
-                            <i class="fa fa-bar-chart"></i>Charts </a>
-                    </li>
-                    <li>
-                        <a href="forms.html">
-                            <i class="icon-padnote"></i>Forms </a>
-                    </li>
-                    <li>
-                        <a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse">
-                            <i class="icon-interface-windows"></i>Example dropdown </a>
-                        <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
-                            <li>
-                                <a href="#">Page</a>
+                <!-- Sidebar Navidation Menus--><span class="heading"></span>
+                  <ul class="list-unstyled">
+                            <li><a href="index.html"> <i class="icon-home"></i>Home </a></li>
+                             
+                            <li class="active"><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Cadastro </a>
+                              <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                                <li><a href="sigsaude_form.html"><i class="icon-grid"></i>Paciente</a></li>
+                                <li><a> <i class="icon-grid"></i>Especialidade </a></li>
+                                <li><a> <i class="icon-grid"></i>Acolhimento </a></li> 
+                              </ul>
                             </li>
-                            <li>
-                                <a href="#">Page</a>
-                            </li>
-                            <li>
-                                <a href="#">Page</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="login.html">
-                            <i class="icon-interface-windows"></i>Login page </a>
-                    </li>
-                </ul>
-                <span class="heading">Extras</span>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href="#">
-                            <i class="icon-flask"></i>Demo </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="icon-screen"></i>Demo </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="icon-mail"></i>Demo </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i class="icon-picture"></i>Demo </a>
-                    </li>
-                </ul>
+                            <li><a href="login.html"> <i class="icon-interface-windows"></i>Login</a></li>
+                  </ul>
             </nav>
             <div class="content-inner">
                 <!-- Page Header-->
@@ -332,49 +144,51 @@
                                                                 <h3 class="h4">Informe os dados do paciente</h3>
                                                             </div>
                                                             <div class="card-body">
-                                                                <form class="form-horizontal">
-                                                                    <div class="form-group row">
-                                                                        <label class="col-sm-1 form-control-label">Nome</label>
-                                                                        <div class="col-sm-5">
-                                                                            <input id="inputHorizontalSuccess" type="text" placeholder="Nome" class="form-control form-control-success">
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-9">
+                                                                              <label>Nome</label>
+                                                                              <input id="inputHorizontalSuccess" type="text" placeholder="Nome" class="form-control form-control-success">
                                                                         </div>
-                                                                        <label class="col-sm-2 form-control-label">Possui nome social?</label>
-                                                                        <div class="col-sm-4 select">
-                                                                            <select name="account" class="form-control">
+                                                                        <div class="form-group col-md-3">
+                                                                          <label>Possui nome social?</label>
+                                                                          <select name="account" class="form-control">
                                                                                 <option>NÃO</option>
                                                                                 <option>SIM</option>
                                                                             </select>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="form-group row">
-                                                                        <label class="col-sm-3 form-control-label">Gostaria de usar o nome social?</label>
-                                                                        <div class="col-sm-2 select">
-                                                                            <select name="account" class="form-control">
+                                                                      </div>
+
+                                                                      <div class="form-row">
+                                                                        <div class="form-group col-md-4">
+                                                                              <label>Gostaria de usar o nome social?</label>
+                                                                             <select name="account" class="form-control">
                                                                                 <option>NÃO</option>
                                                                                 <option>SIM</option>
                                                                             </select>
                                                                         </div>
-                                                                        <label class="col-sm-1 form-control-label">Nome social</label>
-                                                                        <div class="col-sm-6">
-                                                                            <input id="input" type="text" placeholder="Nome social" class="form-control form-control-success">
+                                                                        <div class="form-group col-md-8">
+                                                                          <label>Nome Social</label>
+                                                                          <input id="inputHorizontalSuccess" type="text" placeholder="Nome Social" class="form-control form-control-success">
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="form-group row">
-                                                                        <label class="col-sm-1 form-control-label">CPF</label>
-                                                                        <div class="col-sm-3">
+                                                                      </div>
+
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-4">
+                                                                            <label>CPF</label>
                                                                             <input id="inputCPF" type="text" placeholder="CPF" class="form-control form-control-success">
                                                                         </div>
-                                                                        <label class="col-sm-2 form-control-label">Identidade</label>
-                                                                        <div class="col-sm-2">
+                                                                        <div class="form-group col-md-4">
+                                                                            <label>Identidade</label>
                                                                             <input id="inputIdentidade" type="text" placeholder="Identidade" class="form-control form-control-success">
                                                                         </div>
-                                                                        <label class="col-sm-2 form-control-label">Órgão expedidor</label>
-                                                                        <div class="col-sm-2">
+                                                                        <div class="form-group col-md-4">
+                                                                            <label>Órgão expedidor</label>
                                                                             <input id="inputOrgaoExpedidor" type="text" placeholder="Órgão expedidor" class="form-control form-control-success">
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-group row">
-                                                                        <label class="col-sm-1 form-control-label">Sexo</label>
+                                                                        <label>Sexo</label>
                                                                         <div class="col-sm-2 select">
                                                                             <select name="account" class="form-control">
                                                                                 <option>Masculino</option>
@@ -471,7 +285,7 @@
                                             </li>
                                             <li>
                                                 <a href="#formSaude" aria-expanded="false" data-toggle="collapse">
-                                                    Informações relacionadas a saúde </a>
+                                                    Informações relacionadas à saúde </a>
                                                 <ul id="formSaude" class="collapse list-unstyled ">
                                                     <div class="col-lg-12">
                                                         <div class="card">
@@ -511,7 +325,7 @@
                                             </li>
                                             <li>
                                                 <a href="#formSocioeconomico" aria-expanded="false" data-toggle="collapse">
-                                                    Informações socioeconomicas </a>
+                                                    Informações socioeconômicas </a>
                                                 <ul id="formSocioeconomico" class="collapse list-unstyled ">
                                                     <div class="col-lg-12">
                                                         <div class="card">
@@ -529,7 +343,7 @@
                                                                 </div>
                                                             </div>
                                                             <div class="card-header d-flex align-items-center">
-                                                                <h3 class="h4">Informe os dados socioeconomicos do paciente</h3>
+                                                                <h3 class="h4">Informe os dados socioeconômicos do paciente</h3>
                                                             </div>
                                                             <div class="card-body">
                                                                 <form class="form-horizontal">
@@ -658,9 +472,9 @@
 
                     <div class="line"></div>
                     <div class="form-group row">
-                        <div class="col-sm-4 offset-sm-3">
+                        <div class="col-sm-4 offset-sm-9">
                             <button type="submit" class="btn btn-secondary">Cancelar</button>
-                            <button type="submit" class="btn btn-primary">Cadastrar!</button>
+                            <button type="submit" class="btn btn-primary">Cadastrar</button>
                         </div>
                     </div>
                 </section>
