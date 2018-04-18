@@ -151,28 +151,30 @@
                                                                         </div>
                                                                       </div>
 
-                                                                      <div class="form-row">
-                                                                        <div class="form-group col-md-3">
-                                                                          <label>Possui nome social?</label>
-                                                                          <select name="account" class="form-control">
-                                                                                <option>NÃO</option>
-                                                                                <option>SIM</option>
-                                                                            </select>
-                                                                        </div>
-                                                                        <div class="form-group col-md-4">
-                                                                              <label>Gostaria de usar o nome social?</label>
-                                                                             <select name="account" class="form-control">
-                                                                                <option>NÃO</option>
-                                                                                <option>SIM</option>
-                                                                            </select>
-                                                                        </div>
-                                                                        <div class="form-group col-md-5">
-                                                                          <label>Nome Social</label>
-                                                                          <input id="inputHorizontalSuccess" type="text" placeholder="Nome Social" class="form-control form-control-success">
-                                                                        </div>
-                                                                      </div>
-
                                                                     <div class="form-row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Gostaria de usar o nome social?</label>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="customRadioInline1">Sim</label>
+                                                                            </div>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="customRadioInline2">Não</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Nome Social</label>
+                                                                            <input id="inputHorizontalSuccess" type="text" placeholder="Nome Social" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-4">
+                                                                            <label>Data de nascimento</label>
+                                                                            <input id="inputNascimento" type="date" placeholder="DD/MM/AAAA" class="form-control form-control-success">
+                                                                        </div>
                                                                         <div class="form-group col-md-4">
                                                                             <label>Identidade</label>
                                                                             <input id="inputIdentidade" name="rg" placeholder="XXX.XXX.XXX" onkeypress="mascara(this, '###.###.###')" maxlength="11" type="text" placeholder="Identidade" class="form-control form-control-success">
@@ -181,18 +183,16 @@
                                                                             <label>Órgão expedidor</label>
                                                                             <input id="inputOrgaoExpedidor" type="text" placeholder="Órgão expedidor" class="form-control form-control-success">
                                                                         </div>
+                                                                        
+                                                                        
+                                                                    </div>
+                                                                    <div class="form-row">
                                                                         <div class="form-group col-md-4">
                                                                             <label>Sexo</label>
                                                                             <select name="account" class="form-control">
                                                                                 <option>Masculino</option>
                                                                                 <option>Feminino</option>
                                                                             </select>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-row">
-                                                                        <div class="form-group col-md-4">
-                                                                            <label>Data de nascimento</label>
-                                                                            <input id="inputNascimento" type="date" placeholder="DD/MM/AAAA" class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-1">
                                                                             <label>Idade</label>
@@ -253,10 +253,22 @@
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-row">
-                                                                        <div class="form-group col-md-6">
+                                                                        <div class="form-group col-md-12">
                                                                             <label>Logradouro</label>
                                                                             <input id="inputLogradouro" type="text" placeholder="Rua/avenida" class="form-control form-control-success">
                                                                         </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-5">
+                                                                            <label>Cartão do SUS</label>
+                                                                            <input id="inputSUS" type="text" placeholder="Número do cartão do SUS" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-7">
+                                                                            <label>Unidade básica de saúde da qual é usuário</label>
+                                                                            <input id="inputUBS" type="text" placeholder="Unidade básica de saúde da qual é usuário" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                             <label>Telefone 1</label>
                                                                             <input id="inputTelefone" type="text" placeholder="XX XXXXX-XXXX" name="telefone" onkeypress="mascara(this, '## #####-####')" maxlength="13" class="form-control form-control-success">
@@ -265,21 +277,9 @@
                                                                             <label>Telefone 2</label>
                                                                             <input id="inputTelefone2" type="text" placeholder="XX XXXXX-XXXX" name="telefone" onkeypress="mascara(this, '## ####-####')" maxlength="13" class="form-control form-control-success">
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="form-row">
-                                                                        <div class="form-group col-md-7">
+                                                                        <div class="form-group col-md-6">
                                                                             <label>E-mail</label>
                                                                             <input id="inputEmail" type="email" placeholder="E-mail " class="form-control form-control-success">
-                                                                        </div>
-                                                                    	<div class="form-group col-md-5">
-                                                                            <label>Cartão do SUS</label>
-                                                                            <input id="inputSUS" type="text" placeholder="Número do cartão do SUS" class="form-control form-control-success">
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="form-row">
-                                                                        <div class="form-group col-md-6">
-                                                                            <label>Unidade básica de saúde da qual é usuário</label>
-                                                                            <input id="inputUBS" type="text" placeholder="Unidade básica de saúde da qual é usuário" class="form-control form-control-success">
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -303,10 +303,15 @@
                                                                         <div class="form-group col-md-3">
                                                                               <label>Escolaridade</label>
                                                                               <select name="account" class="form-control">
-                                                                                <option>Fundamental</option>
-                                                                                <option>Médio</option>
-                                                                                <option>Superior</option>
-                                                                                <option>Não tenho</option>
+                                                                                <option>Fundamental incompleto</option>
+                                                                                <option>Fundamental completo</option>
+                                                                                <option>Médio incompleto</option>
+                                                                                <option>Médio completo</option>
+                                                                                <option>Superior incompleto</option>
+                                                                                <option>Superior completo</option>
+                                                                                <option>Pós-graduação completa</option>
+                                                                                <option>Pós-graduação incompleta</option>
+                                                                                <option>Nenhuma</option>
                                                                             </select>
                                                                         </div>
                                                                         <div class="form-group col-md-3">
