@@ -155,19 +155,19 @@
                                                                         <div class="form-group col-md-12">
                                                                             <label>Gostaria de usar o nome social?</label>
                                                                             <div class="custom-control custom-radio custom-control-inline">
-                                                                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                                                                <label class="custom-control-label" for="customRadioInline1">Sim</label>
+                                                                                <input onclick="habilitaNomeSocial('radioNomeSocialSim', 'inputNomeSocial', 'SIM')" type="radio" id="radioNomeSocialSim" name="radio" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioNomeSocialSim">Sim</label>
                                                                             </div>
                                                                             <div class="custom-control custom-radio custom-control-inline">
-                                                                                <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                                                                                <label class="custom-control-label" for="customRadioInline2">Não</label>
+                                                                                <input onclick="habilitaNomeSocial('radioNomeSocialNao', 'inputNomeSocial', 'NAO')" type="radio" id="radioNomeSocialNao" name="radio" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioNomeSocialNao">Não</label>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-12">
                                                                             <label>Nome Social</label>
-                                                                            <input id="inputHorizontalSuccess" type="text" placeholder="Nome Social" class="form-control form-control-success">
+                                                                            <input disabled='true' id="inputNomeSocial" type="text" placeholder="Nome Social" class="form-control form-control-success">
                                                                         </div>
                                                                     </div>
                                                                     <div class="form-row">
@@ -302,7 +302,7 @@
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                               <label>Escolaridade</label>
-                                                                              <select onchange="habilita('selectEscolaridade','inputAnos');" id="selectEscolaridade" name="account" class="form-control">
+                                                                              <select onchange="habilitaAnosEscolaridade('selectEscolaridade','inputAnos');" id="selectEscolaridade" name="account" class="form-control">
                                                                                 <option>Nenhuma</option>
                                                                                 <option>Fundamental incompleto</option>
                                                                                 <option>Fundamental completo</option>
@@ -469,7 +469,7 @@
          }
     </script>
     <script language="JavaScript">
-        function habilita(inputEscolaridade, inputAnos){
+        function habilitaAnosEscolaridade(inputEscolaridade, inputAnos){
             var inputAnos = document.getElementById(inputAnos);
             var inputEscolaridade = document.getElementById(inputEscolaridade);
             var escolaridade = inputEscolaridade.value;
@@ -478,8 +478,18 @@
             if(compara_incompleta > 0 || compara_incompleto > 0){
                 inputAnos.disabled = false;
             } else {
-                inputAnos.value = 0;
+                inputAnos.value = "";
                 inputAnos.disabled = true;
+            }
+        }
+        function habilitaNomeSocial(inputRadio, inputNomeSocial, valor){
+            var inputRadio = document.getElementById(inputRadio);
+            var inputNomeSocial = document.getElementById(inputNomeSocial);
+            if(inputRadio.value == 'on' && valor == 'SIM'){
+                inputNomeSocial.disabled = false;
+            } else if (inputRadio.value == 'on' && valor == 'NAO'){
+                inputNomeSocial.value = "";
+                inputNomeSocial.disabled = true;
             }
         }
     </script>
