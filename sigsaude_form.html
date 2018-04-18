@@ -176,7 +176,7 @@
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-4">
                                                                             <label>CPF</label>
-                                                                            <input id="inputCPF" type="text" placeholder="CPF" class="form-control form-control-success">
+                                                                            <input id="inputCPF" type="text" data-mask="000.000.000-00" maxlength="14" placeholder="CPF" class="form-control form-control-success cpf-mask">
                                                                         </div>
                                                                         <div class="form-group col-md-4">
                                                                             <label>Identidade</label>
@@ -197,7 +197,7 @@
                                                                         </div>
                                                                         <div class="form-group col-md-4">
                                                                             <label>Data de nascimento</label>
-                                                                            <input id="inputNascimento" type="text" placeholder="dd/mm/aaaa" class="form-control form-control-success">
+                                                                            <input id="inputNascimento" type="text" placeholder="DD/MM/AAAA" class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-2">
                                                                             <label>Idade</label>
@@ -257,7 +257,7 @@
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                             <label>Telefone 1</label>
-                                                                             <input id="inputTelefone" type="text" placeholder="Telefone " class="form-control form-control-success">
+                                                                            <input id="inputTelefone" type="text" placeholder="Telefone " class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-3">
                                                                             <label>Telefone 2</label>
@@ -328,6 +328,10 @@
                                                                             </select>
                                                                         </div>
                                                                         <div class="form-group col-md-3">
+                                                                          <label>Anos</label>
+                                                                          <input id="inputAnos" type="number" placeholder="Anos" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
                                                                           <label>Curso</label>
                                                                           <input id="inputCurso" type="text" placeholder="Curso" class="form-control form-control-success">
                                                                         </div>
@@ -335,28 +339,28 @@
                                                                           <label>Profissão</label>
                                                                           <input id="inputProfissão" type="text" placeholder="Profissão" class="form-control form-control-success">
                                                                         </div>
-                                                                        <div class="form-group col-md-3">
-                                                                          <label>Ocupação atual</label>
-                                                                           <input id="inputOcupacao" type="text" placeholder="Ocupação atual" class="form-control form-control-success">
-                                                                        </div>
                                                                       </div>
 
                                                                     <div class="form-row">
+                                                                    	<div class="form-group col-md-3">
+                                                                          	<label>Ocupação atual</label>
+                                                                           	<input id="inputOcupacao" type="text" placeholder="Ocupação atual" class="form-control form-control-success">
+                                                                        </div>
                                                                         <div class="form-group col-md-6">
                                                                               <label>Qtde. de pessoas que moram na residência</label>
-                                                                              <input id="inputQtdPessoas" type="text" placeholder="Quantidade de pessoas que moram na residência" class="form-control form-control-success">
+                                                                              <input id="inputQtdPessoas" type="number" placeholder="Quantidade de pessoas que moram na residência" class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-3">
                                                                           <label>Quantas trabalham?</label>
                                                                           <input id="inputQtdTrabalham" type="text" placeholder="Quantas trabalham ?" class="form-control form-control-success">
                                                                         </div>
-                                                                        <div class="form-group col-md-3">
-                                                                          <label>Renda total</label>
-                                                                          <input id="inputRenda" type="text" placeholder="Renda total" class="form-control form-control-success">
-                                                                        </div>
                                                                       </div>
 
                                                                     <div class="form-row">
+                                                                    	<div class="form-group col-md-4">
+                                                                          	<label>Renda total</label>
+                                                                          	<input id="inputRenda" type="text" placeholder="Renda total" class="form-control form-control-success">
+                                                                        </div>
                                                                         <div class="form-group col-md-4">
                                                                               <label>Possui algum benefício social?</label>
                                                                               <select name="account" class="form-control">
@@ -364,11 +368,13 @@
                                                                                 <option>NÃO</option>
                                                                             </select>
                                                                         </div>
-                                                                        <div class="form-group col-md-3">
+                                                                        <div class="form-group col-md-4">
                                                                           <label>Qual benefício?</label>
-                                                                          <select name="account" class="form-control">
+                                                                          <select name="account" class="form-control selectpicker" data-live-search="true" data-live-search-style="startsWith">
                                                                                 <option>Bolsa família</option>
-                                                                                <option>XXXXXXXXXXXXXX</option>
+                                                                                <option>Minha casa, minha vida</option>
+                                                                                <option>Fomento</option>
+                                                                                <option>Bolsa verde</option>
                                                                                 <option>Outros benefícios</option>
                                                                             </select>
                                                                         </div>
