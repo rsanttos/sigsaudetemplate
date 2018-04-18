@@ -176,11 +176,11 @@
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-4">
                                                                             <label>CPF</label>
-                                                                            <input id="inputCPF" type="text" data-mask="000.000.000-00" maxlength="14" placeholder="CPF" class="form-control form-control-success cpf-mask">
+                                                                            <input id="inputCPF" type="text" name="cpf" placeholder="XXX.XXX.XXX-XX" onkeypress="mascara(this, '###.###.###-##')" maxlength="14" class="form-control form-control-success cpf-mask">
                                                                         </div>
                                                                         <div class="form-group col-md-4">
                                                                             <label>Identidade</label>
-                                                                            <input id="inputIdentidade" type="text" placeholder="Identidade" class="form-control form-control-success">
+                                                                            <input id="inputIdentidade" name="rg" placeholder="XXX.XXX.XXX" onkeypress="mascara(this, '###.###.###')" maxlength="11" type="text" placeholder="Identidade" class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-4">
                                                                             <label>Órgão expedidor</label>
@@ -239,7 +239,7 @@
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                             <label>CEP</label>
-                                                                             <input id="inputCEP" type="text" placeholder="CEP" class="form-control form-control-success">
+                                                                             <input id="inputCEP" type="text" placeholder="XXXXX-XXX" name="cep" onkeypress="mascara(this, '#####-###')" maxlength="9" class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-3">
                                                                             <label>Logradouro</label>
@@ -257,11 +257,11 @@
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                             <label>Telefone 1</label>
-                                                                            <input id="inputTelefone" type="text" placeholder="Telefone " class="form-control form-control-success">
+                                                                            <input id="inputTelefone" type="text" placeholder="XX XXXXX-XXXX" name="telefone" onkeypress="mascara(this, '## #####-####')" maxlength="13" class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-3">
                                                                             <label>Telefone 2</label>
-                                                                            <input id="inputTelefone2" type="text" placeholder="Telefone " class="form-control form-control-success">
+                                                                            <input id="inputTelefone2" type="text" placeholder="XX XXXXX-XXXX" name="telefone" onkeypress="mascara(this, '## ####-####')" maxlength="13" class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-6">
                                                                             <label>E-mail</label>
@@ -482,6 +482,19 @@
     <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
     <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    
+    <script language="JavaScript">
+         function mascara(t, mask)
+         {
+             var i = t.value.length;
+             var saida = mask.substring(1,0);
+             var texto = mask.substring(i)
+            if (texto.substring(0,1) != saida)
+            {
+                t.value += texto.substring(0,1);
+            }
+         }
+    </script>
     <!-- Main File-->
     <script src="js/front.js"></script>
 </body>
