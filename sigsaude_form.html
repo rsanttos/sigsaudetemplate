@@ -127,39 +127,34 @@
                                                 <ul id="formPaciente" class="collapse list-unstyled ">
                                                     <div class="col-lg-12">
                                                         <div class="card">
-                                                            <div class="card-close">
-                                                                <div class="dropdown">
-                                                                    <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
-                                                                        <i class="fa fa-ellipsis-v"></i>
-                                                                    </button>
-                                                                    <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow">
-                                                                        <a href="#" class="dropdown-item remove">
-                                                                            <i class="fa fa-times"></i>Close</a>
-                                                                        <a href="#" class="dropdown-item edit">
-                                                                            <i class="fa fa-gear"></i>Edit</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                                             <div class="card-header d-flex align-items-center">
                                                                 <h3 class="h4">Informe os dados do paciente</h3>
                                                             </div>
                                                             <div class="card-body">
                                                                 <form>
                                                                     <div class="form-row">
-                                                                        <div class="form-group col-md-9">
+                                                                    	<div class="form-group col-md-3">
+                                                                            <label>CPF</label>
+                                                                            <input id="inputCPF" type="text" data-mask="000.000.000-00" maxlength="14" placeholder="CPF" class="form-control form-control-success cpf-mask">
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <label>Vínculo com a UFRN</label>
+                                                                            <label id="labelVinculo" class="form-control form-control-success">PREENCHER!</label>
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
                                                                               <label>Nome</label>
                                                                               <input id="inputHorizontalSuccess" type="text" placeholder="Nome" class="form-control form-control-success">
                                                                         </div>
-                                                                        <div class="form-group col-md-3">
+                                                                      </div>
+
+                                                                      <div class="form-row">
+                                                                      	<div class="form-group col-md-3">
                                                                           <label>Possui nome social?</label>
                                                                           <select name="account" class="form-control">
                                                                                 <option>NÃO</option>
                                                                                 <option>SIM</option>
                                                                             </select>
                                                                         </div>
-                                                                      </div>
-
-                                                                      <div class="form-row">
                                                                         <div class="form-group col-md-4">
                                                                               <label>Gostaria de usar o nome social?</label>
                                                                              <select name="account" class="form-control">
@@ -167,17 +162,13 @@
                                                                                 <option>SIM</option>
                                                                             </select>
                                                                         </div>
-                                                                        <div class="form-group col-md-8">
+                                                                        <div class="form-group col-md-5">
                                                                           <label>Nome Social</label>
                                                                           <input id="inputHorizontalSuccess" type="text" placeholder="Nome Social" class="form-control form-control-success">
                                                                         </div>
                                                                       </div>
 
                                                                     <div class="form-row">
-                                                                        <div class="form-group col-md-4">
-                                                                            <label>CPF</label>
-                                                                            <input id="inputCPF" type="text" data-mask="000.000.000-00" maxlength="14" placeholder="CPF" class="form-control form-control-success cpf-mask">
-                                                                        </div>
                                                                         <div class="form-group col-md-4">
                                                                             <label>Identidade</label>
                                                                             <input id="inputIdentidade" type="text" placeholder="Identidade" class="form-control form-control-success">
@@ -186,20 +177,20 @@
                                                                             <label>Órgão expedidor</label>
                                                                             <input id="inputOrgaoExpedidor" type="text" placeholder="Órgão expedidor" class="form-control form-control-success">
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="form-row">
-                                                                        <div class="form-group col-md-3">
+                                                                        <div class="form-group col-md-4">
                                                                             <label>Sexo</label>
                                                                             <select name="account" class="form-control">
                                                                                 <option>Masculino</option>
                                                                                 <option>Feminino</option>
                                                                             </select>
                                                                         </div>
+                                                                    </div>
+                                                                    <div class="form-row">
                                                                         <div class="form-group col-md-4">
                                                                             <label>Data de nascimento</label>
                                                                             <input id="inputNascimento" type="text" placeholder="DD/MM/AAAA" class="form-control form-control-success">
                                                                         </div>
-                                                                        <div class="form-group col-md-2">
+                                                                        <div class="form-group col-md-1">
                                                                             <label>Idade</label>
                                                                             <input id="inputIdade" type="text" placeholder="" class="form-control form-control-success">
                                                                         </div>
@@ -213,8 +204,6 @@
                                                                                 <option>Não declarada</option>
                                                                             </select>
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="form-row">
                                                                         <div class="form-group col-md-4">
                                                                             <label>Estado civil</label>
                                                                             <select name="account" class="form-control">
@@ -223,7 +212,9 @@
                                                                                 <option>Divorciado (a)</option>
                                                                             </select>
                                                                         </div>
-                                                                        <div class="form-group col-md-5">
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-6">
                                                                             <label>Deseja prestar informação sobre gênero?</label>
                                                                             <select name="account" class="form-control">
                                                                                 <option>SIM</option>
@@ -234,13 +225,13 @@
                                                                             <label>Gênero</label>
                                                                             <input id="inputGenero" type="text" placeholder="Gênero" class="form-control form-control-success">
                                                                         </div>
-                                                                    </div>
-
-                                                                    <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                             <label>CEP</label>
                                                                              <input id="inputCEP" type="text" placeholder="CEP" class="form-control form-control-success">
                                                                         </div>
+                                                                    </div>
+
+                                                                    <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                             <label>Logradouro</label>
                                                                             <input id="inputLogradouro" type="text" placeholder="Rua/avenida" class="form-control form-control-success">
@@ -253,35 +244,27 @@
                                                                             <label>Cidade</label>
                                                                             <input id="inputCidade" type="text" placeholder="Cidade" class="form-control form-control-success">
                                                                         </div>
-                                                                    </div>
-                                                                    <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                             <label>Telefone 1</label>
                                                                             <input id="inputTelefone" type="text" placeholder="Telefone " class="form-control form-control-success">
                                                                         </div>
+                                                                    </div>
+                                                                    <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                             <label>Telefone 2</label>
                                                                             <input id="inputTelefone2" type="text" placeholder="Telefone " class="form-control form-control-success">
                                                                         </div>
-                                                                        <div class="form-group col-md-6">
+                                                                        <div class="form-group col-md-5">
                                                                             <label>E-mail</label>
                                                                             <input id="inputEmail" type="email" placeholder="E-mail " class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-4">
+                                                                            <label>Cartão do SUS</label>
+                                                                            <input id="inputSUS" type="text" placeholder="Número do cartão do SUS" class="form-control form-control-success">
                                                                         </div>
                                                                     </div>
 
                                                                     <div class="form-row">
-                                                                        <div class="form-group col-md-3">
-                                                                            <label>Vínculo com a UFRN</label>
-                                                                             <select name="account" class="form-control">
-                                                                                <option>Não possui</option>
-                                                                                <option>Servidor ativo</option>
-                                                                                <option>Aluno</option>
-                                                                            </select>
-                                                                        </div>
-                                                                        <div class="form-group col-md-3">
-                                                                            <label>Cartão do SUS</label>
-                                                                            <input id="inputSUS" type="text" placeholder="Número do cartão do SUS" class="form-control form-control-success">
-                                                                        </div>
                                                                         <div class="form-group col-md-6">
                                                                             <label>Unidade básica de saúde da qual é usuário</label>
                                                                             <input id="inputUBS" type="text" placeholder="Unidade básica de saúde da qual é usuário" class="form-control form-control-success">
@@ -299,19 +282,6 @@
                                                 <ul id="formSocioeconomico" class="collapse list-unstyled ">
                                                     <div class="col-lg-12">
                                                         <div class="card">
-                                                            <div class="card-close">
-                                                                <div class="dropdown">
-                                                                    <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
-                                                                        <i class="fa fa-ellipsis-v"></i>
-                                                                    </button>
-                                                                    <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow">
-                                                                        <a href="#" class="dropdown-item remove">
-                                                                            <i class="fa fa-times"></i>Close</a>
-                                                                        <a href="#" class="dropdown-item edit">
-                                                                            <i class="fa fa-gear"></i>Edit</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                                             <div class="card-header d-flex align-items-center">
                                                                 <h3 class="h4">Informe os dados socioeconômicos do paciente</h3>
                                                             </div>
@@ -348,7 +318,7 @@
                                                                         </div>
                                                                         <div class="form-group col-md-6">
                                                                               <label>Qtde. de pessoas que moram na residência</label>
-                                                                              <input id="inputQtdPessoas" type="number" placeholder="Quantidade de pessoas que moram na residência" class="form-control form-control-success">
+                                                                              <input id="inputQtdPessoas" type="number" placeholder="Qtde. de pessoas que moram na residência" class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-3">
                                                                           <label>Quantas trabalham?</label>
@@ -392,19 +362,6 @@
                                                 <ul id="formResponsavel" class="collapse list-unstyled ">
                                                     <div class="col-lg-12">
                                                         <div class="card">
-                                                            <div class="card-close">
-                                                                <div class="dropdown">
-                                                                    <button type="button" id="closeCard2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-toggle">
-                                                                        <i class="fa fa-ellipsis-v"></i>
-                                                                    </button>
-                                                                    <div aria-labelledby="closeCard2" class="dropdown-menu dropdown-menu-right has-shadow">
-                                                                        <a href="#" class="dropdown-item remove">
-                                                                            <i class="fa fa-times"></i>Close</a>
-                                                                        <a href="#" class="dropdown-item edit">
-                                                                            <i class="fa fa-gear"></i>Edit</a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
                                                             <div class="card-header d-flex align-items-center">
                                                                 <h3 class="h4">Informe os dados do responsável pelo paciente</h3>
                                                             </div>
