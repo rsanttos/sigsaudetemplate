@@ -271,11 +271,11 @@
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                             <label>Telefone 1</label>
-                                                                            <input id="inputTelefone" type="text" placeholder="XX XXXXX-XXXX" name="telefone" onkeypress="mascara(this, '## #####-####')" maxlength="13" class="form-control form-control-success">
+                                                                            <input id="inputTelefone" type="text" placeholder="(XX) XXXXX-XXXX" name="telefone" onkeypress="mascaraTelefone(this)" maxlength="15" class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-3">
                                                                             <label>Telefone 2</label>
-                                                                            <input id="inputTelefone2" type="text" placeholder="XX XXXXX-XXXX" name="telefone" onkeypress="mascara(this, '## ####-####')" maxlength="13" class="form-control form-control-success">
+                                                                            <input id="inputTelefone2" type="text" placeholder="(XX) XXXXX-XXXX" name="telefone" onkeypress="mascaraTelefone(this)" maxlength="15" class="form-control form-control-success">
                                                                         </div>
                                                                         <div class="form-group col-md-6">
                                                                             <label>E-mail</label>
@@ -461,11 +461,22 @@
          {
              var i = t.value.length;
              var saida = mask.substring(1,0);
-             var texto = mask.substring(i)
+             var texto = mask.substring(i);
             if (texto.substring(0,1) != saida)
             {
                 t.value += texto.substring(0,1);
             }
+         }
+         function mascaraTelefone(t){
+             var i = t.value.length;
+             var valor = t.value;
+             if(i == 0){
+                 t.value = "(" + valor;
+             } else if(i == 3){
+                 t.value = valor + ") ";
+             } else if(i == 10){
+                 t.value = valor + "-";
+             }
          }
     </script>
     <script language="JavaScript">
