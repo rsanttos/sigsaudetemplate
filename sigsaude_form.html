@@ -139,7 +139,7 @@
                                                                         </div>
                                                                         <div class="form-group col-md-3">
                                                                             <label>Vínculo com a UFRN</label>
-                                                                            <label id="labelVinculo" class="form-control form-control-success">PREENCHER!</label>
+                                                                            <label id="labelVinculo" class="form-control form-control-success">Sem vínculo</label>
                                                                         </div>
                                                                     </div>
 
@@ -217,48 +217,26 @@
                                                                             </select>
                                                                         </div>
                                                                     </div>
-
                                                                     <div class="form-row">
-                                                                            <div class="form-group col-md-6">
-                                                                                <label>Deseja prestar informação sobre gênero?</label>
-                                                                                <div class="custom-control custom-radio custom-control-inline">
-                                                                                    <input onclick="habilitaGenero('radioGeneroSim', 'divGenero', 'SIM')" type="radio" id="radioGeneroSim" name="radio" class="custom-control-input">
-                                                                                    <label class="custom-control-label" for="radioGeneroSim">Sim</label>
-                                                                                </div>
-                                                                                <div class="custom-control custom-radio custom-control-inline">
-                                                                                    <input onclick="habilitaGenero('radioGeneroNao', 'divGenero', 'NAO')" type="radio" id="radioGeneroNao" name="radio" class="custom-control-input">
-                                                                                    <label class="custom-control-label" for="radioGeneroNao">Não</label>
-                                                                                </div>
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Deseja prestar informação sobre gênero?</label>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input onclick="habilitaGenero('radioGeneroSim', 'inputGenero', 'SIM')" type="radio" id="radioGeneroSim" name="radio1" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioGeneroSim">Sim</label>
                                                                             </div>
-                                                                            <div class="form-group col-md-6" id="divGenero"></div>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input onclick="habilitaGenero('radioGeneroNao', 'inputGenero', 'NAO')" type="radio" id="radioGeneroNao" name="radio1" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioGeneroNao">Não</label>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                     <div class="form-row">
-                                                                        <div class="form-group col-md-3">
-                                                                            <label>CEP</label>
-                                                                            <input id="inputCEP" type="text" placeholder="XXXXX-XXX" name="cep" onkeypress="mascara(this, '#####-###')" maxlength="9" class="form-control form-control-success">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Gênero</label>
+                                                                            <input disabled='true' id="inputGenero" type="text" placeholder="Gênero" class="form-control form-control-success">
                                                                         </div>
-                                                                        <div class="form-group col-md-9">
-                                                                            <label>Logradouro</label>
-                                                                            <input id="inputLogradouro" type="text" placeholder="Rua/avenida" class="form-control form-control-success">
-                                                                        </div>                                                                        
-                                                                    </div>
-                                                                    <div class="form-row"><div class="form-group col-md-4">
-                                                                            <label>Bairro</label>
-                                                                           <input id="inputBairro" type="text" placeholder="Bairro" class="form-control form-control-success">
-                                                                       </div>
-                                                                       <div class="form-group col-md-4">
-                                                                           <label>Cidade</label>
-                                                                           <input id="inputCidade" type="text" placeholder="Cidade" class="form-control form-control-success">
-                                                                       </div>
-                                                                       <div class="form-group col-md-1">
-                                                                           <label>UF</label>
-                                                                           <input id="inputUF" type="text" placeholder="UF" class="form-control form-control-success">
-                                                                       </div>
-                                                                       <div class="form-group col-md-3">
-                                                                           <label>País</label>
-                                                                           <input id="inputPais" type="text" placeholder="País" class="form-control form-control-success">
-                                                                       </div>
-                                                                    </div>
+                                                                    </div>             
+                                                
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-5">
                                                                             <label>Cartão do SUS</label>
@@ -269,6 +247,70 @@
                                                                             <input id="inputUBS" type="text" placeholder="Unidade básica de saúde da qual é usuário" class="form-control form-control-success">
                                                                         </div>
                                                                     </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#formEndereco" aria-expanded="false" data-toggle="collapse">
+                                                    Informações de endereço </a>
+                                                <ul id="formEndereco" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados de endereço</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                            <div class="form-group col-md-3">
+                                                                                <label>CEP</label>
+                                                                                <input id="inputCEP" type="text" placeholder="XXXXX-XXX" name="cep" onkeypress="mascara(this, '#####-###')" maxlength="9" class="form-control form-control-success">
+                                                                            </div>
+                                                                            <div class="form-group col-md-9">
+                                                                                <label>Logradouro</label>
+                                                                                <input id="inputLogradouro" type="text" placeholder="Rua/avenida" class="form-control form-control-success">
+                                                                            </div>                                                                        
+                                                                        </div>
+                                                                        <div class="form-row"><div class="form-group col-md-4">
+                                                                                <label>Bairro</label>
+                                                                               <input id="inputBairro" type="text" placeholder="Bairro" class="form-control form-control-success">
+                                                                           </div>
+                                                                           <div class="form-group col-md-4">
+                                                                               <label>Cidade</label>
+                                                                               <input id="inputCidade" type="text" placeholder="Cidade" class="form-control form-control-success">
+                                                                           </div>
+                                                                           <div class="form-group col-md-1">
+                                                                               <label>UF</label>
+                                                                               <input id="inputUF" type="text" placeholder="UF" class="form-control form-control-success">
+                                                                           </div>
+                                                                           <div class="form-group col-md-3">
+                                                                               <label>País</label>
+                                                                               <input id="inputPais" type="text" placeholder="País" class="form-control form-control-success">
+                                                                           </div>
+                                                                        </div>
+                                                                    
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#formContato" aria-expanded="false" data-toggle="collapse">
+                                                    Informações de contato </a>
+                                                <ul id="formContato" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados de contato</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form>
                                                                     <div class="form-row">
                                                                         <div class="form-group col-md-3">
                                                                             <label>Telefone 1</label>
@@ -283,12 +325,14 @@
                                                                             <input id="inputEmail" type="email" placeholder="E-mail " class="form-control form-control-success">
                                                                         </div>
                                                                     </div>
-                                                                </div>
-                                                            </form>
+                                                                </form>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </ul>
                                             </li>
+
+
                                             <li>
                                                 <a href="#formSocioeconomico" aria-expanded="false" data-toggle="collapse">
                                                     Informações socioeconômicas </a>
@@ -330,38 +374,40 @@
                                                                       </div>
 
                                                                     <div class="form-row">
-                                                                        <div class="form-group col-md-3">
+                                                                        <div class="form-group col-md-2">
                                                                             <label>Ocupação atual</label>
                                                                             <input id="inputOcupacao" type="text" placeholder="Ocupação atual" class="form-control form-control-success">
                                                                         </div>
-                                                                        <div class="form-group col-md-4">
-                                                                              <label>Qtde. de pessoas que moram na residência</label>
+                                                                        <div class="form-group col-md-5">
+                                                                              <label>Qtde. de pessoas que moram na residência?</label>
                                                                               <input id="inputQtdPessoas" type="number" placeholder="Qtde. de pessoas que moram na residência" class="form-control form-control-success">
                                                                         </div>
-                                                                        <div class="form-group col-md-2">
+                                                                        <div class="form-group col-md-3">
                                                                           <label>Quantas trabalham?</label>
                                                                           <input id="inputQtdTrabalham" type="number" placeholder="Quantas trabalham ?" class="form-control form-control-success">
                                                                         </div>
-                                                                        <div class="form-group col-md-3">
+                                                                        <div class="form-group col-md-2">
                                                                             <label>Renda total</label>
                                                                             <input id="inputRenda" type="text" placeholder="Renda total" class="form-control form-control-success">
                                                                         </div>
                                                                       </div>
-                                                                    
-                                                                    <div class="form-row">
-                                                                        <div class="form-group col-md-5">
-                                                                                <label>Possui algum benefício social?</label>
-                                                                                <div class="custom-control custom-radio custom-control-inline">
-                                                                                    <input onclick="habilitaBeneficioSocial('radioBeneficioSocialSim', 'divBeneficioSocial', 'SIM')" type="radio" id="radioBeneficioSocialSim" name="radio" class="custom-control-input">
-                                                                                    <label class="custom-control-label" for="radioBeneficioSocialSim">Sim</label>
-                                                                                </div>
-                                                                                <div class="custom-control custom-radio custom-control-inline">
-                                                                                    <input onclick="habilitaBeneficioSocial('radioBeneficioSocialNao', 'divBeneficioSocial', 'NAO')" type="radio" id="radioBeneficioSocialNao" name="radio" class="custom-control-input">
-                                                                                    <label class="custom-control-label" for="radioBeneficioSocialNao">Não</label>
-                                                                                </div>
+
+                                                                      <div class="form-row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Possui algum benefício social?</label>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input onclick="habilitaBeneficioSocial('radioBeneficioSocialSim', 'inputBeneficio', 'SIM')" type="radio" id="radioBeneficioSocialSim" name="radio2" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioBeneficioSocialSim">Sim</label>
                                                                             </div>
-                                                                            <div class="form-group col-md-4" id="divBeneficioSocial"></div>                                                                        
-                                                                      </div>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input onclick="habilitaBeneficioSocial('radioBeneficioSocialNao', 'inputBeneficio', 'NAO')" type="radio" id="radioBeneficioSocialNao" name="radio2" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioBeneficioSocialNao">Não</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">               
+                                                                        <div class="form-group col-md-4" id="inputBeneficio"></div>
+                                                                    </div>
                                                                 </form>
                                                             </div>
                                                         </div>
@@ -499,24 +545,20 @@
                 inputNomeSocial.disabled = true;
             }
         }
-        function habilitaGenero(inputRadio, divInputGenero, valor){
+        function habilitaGenero(inputRadio, inputGenero, valor){
             var inputRadio = document.getElementById(inputRadio);
-            var divInputGenero = document.getElementById(divInputGenero);
+            var inputGenero = document.getElementById(inputGenero);
             if(inputRadio.value == 'on' && valor == 'SIM'){
-                var conteudoDiv = '<div class="form-group col-md-6">';
-                conteudoDiv += '<label>Gênero</label>';
-                conteudoDiv += '<input id="inputGenero" type="text" placeholder="Gênero" class="form-control form-control-success">';
-                conteudoDiv += '</div>';
-                divInputGenero.innerHTML = conteudoDiv;
-            } else if (inputRadio.value = 'on' && valor == 'NAO'){
-                var conteudoDiv = "";
-                divInputGenero.innerHTML = conteudoDiv;
+                inputGenero.disabled = false;
+            } else if (inputRadio.value == 'on' && valor == 'NAO'){
+                inputGenero.value = "";
+                inputGenero.disabled = true;
             }
         }
-        function habilitaBeneficioSocial(inputRadio, divInputBeneficioSocial, valor){
+        function habilitaBeneficioSocial(inputRadio, inputBeneficio, valor){
             var inputRadio = document.getElementById(inputRadio);
-            var divInputBeneficioSocial = document.getElementById(divInputBeneficioSocial);
-            if(inputRadio.value == 'on' && valor == 'SIM'){
+            var inputBeneficio = document.getElementById(inputBeneficio);
+            if(inputRadio.value == 'on' && valor == 'SIM'){                
                 var conteudoDiv = '<label>Qual benefício?</label>';
                 conteudoDiv += '<select name="account" class="form-control selectpicker" data-live-search="true" data-live-search-style="startsWith">';
                 conteudoDiv += '<option>Bolsa família</option>';
@@ -525,10 +567,10 @@
                 conteudoDiv += '<option>Bolsa verde</option>';
                 conteudoDiv += '<option>Outros benefícios</option>';
                 conteudoDiv += '</select>';
-                divInputBeneficioSocial.innerHTML = conteudoDiv;
+                inputBeneficio.innerHTML = conteudoDiv;
             } else if (inputRadio.value = 'on' && valor == 'NAO'){
                 var conteudoDiv = "";
-                divInputBeneficioSocial.innerHTML = conteudoDiv;
+                inputBeneficio.innerHTML = conteudoDiv;
             }
         }
     </script>
