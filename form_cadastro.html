@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SigSaúde</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!-- Font Awesome CSS-->
+    <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+    <!-- Fontastic Custom icon font-->
+    <link rel="stylesheet" href="css/fontastic.css">
+    <!-- Google fonts - Poppins -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,700">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <!-- Custom stylesheet - for your changes-->
+    <link rel="stylesheet" href="css/custom3.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body>
+    <div class="page">
+        <!-- Main Navbar-->
+        <header class="header">
+                    <nav class="navbar">
+          <!-- Search Box-->
+          <div class="search-box">
+            <button class="dismiss"><i class="icon-close"></i></button>
+            <form id="searchForm" action="#" role="search">
+              <input type="search" placeholder="What are you looking for..." class="form-control">
+            </form>
+          </div>
+          <div class="container-fluid">
+            <div class="navbar-holder d-flex align-items-center justify-content-between">
+              <!-- Navbar Header-->
+              <div class="navbar-header">
+                <!-- Navbar Brand --><a href="index.html" class="navbar-brand">
+                  <div class="brand-text brand-big"><span>Sig</span><strong>Saúde</strong></div>
+                  <div class="brand-text brand-small"><strong>SS</strong></div></a>
+                <!-- Toggle Button--><a id="toggle-btn" href="#" class="menu-btn active"><span></span><span></span><span></span></a>
+              </div>
+              <!-- Navbar Menu -->
+              <ul class="nav-menu list-unstyled d-flex flex-md-row align-items-md-center">
+                <!-- Search-->
+                <li class="nav-item d-flex align-items-center"><a id="search" href="#"><i class="icon-search"></i></a></li>
+            
+                <!-- Languages dropdown    -->
+                <li class="nav-item dropdown"><a id="languages" rel="nofollow" data-target="#" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link language dropdown-toggle"><img src="img/flags/16/BR.png" alt="Português"><span class="d-none d-sm-inline-block">Português</span></a>
+                  <ul aria-labelledby="languages" class="dropdown-menu">
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/DE.png" alt="English" class="mr-2">German</a></li>
+                    <li><a rel="nofollow" href="#" class="dropdown-item"> <img src="img/flags/16/FR.png" alt="English" class="mr-2">French                                         </a></li>
+                  </ul>
+                </li>
+                <!-- Logout    -->
+                <li class="nav-item"><a href="login.html" class="nav-link logout">Sair<i class="fa fa-sign-out"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        </header>
+        <div class="page-content d-flex align-items-stretch">
+            <!-- Side Navbar -->
+            <nav class="side-navbar">
+                <!-- Sidebar Header-->
+                <div class="sidebar-header d-flex align-items-center">
+                    <div class="avatar">
+                        <img src="img/user.png" alt="..." class="img-fluid rounded-circle">
+                    </div>
+                    <div class="title">
+                        <h1 class="h4">Itamir Filho</h1>
+                        <p>Especialidade</p>
+                    </div>
+                </div>
+                <!-- Sidebar Navidation Menus--><span class="heading"></span>
+                  <ul class="list-unstyled">
+                            <li><a href="index.html"> <i class="icon-home"></i>Início </a></li>
+                             
+                            <li class="active"><a href="#exampledropdownDropdown" aria-expanded="false" data-toggle="collapse"> <i class="icon-interface-windows"></i>Cadastro </a>
+                              <ul id="exampledropdownDropdown" class="collapse list-unstyled ">
+                                <li><a href="form_cadastro.html"><i class="icon-grid"></i>Paciente</a></li>
+                                <li><a> <i class="icon-grid"></i>Especialidade </a></li>
+                                <li><a href="form_acolhimento.html"> <i class="icon-grid"></i>Acolhimento </a></li> 
+                              </ul>
+                            </li>
+                            <li><a href="login.html"> <i class="icon-interface-windows"></i>Login</a></li>
+                  </ul>
+            </nav>
+            <div class="content-inner">
+                <!-- Page Header-->
+                <header class="page-header">
+                    <div class="container-fluid">
+                        <h2 class="no-margin-bottom">Pacientes</h2>
+                    </div>
+                </header>
+                <!-- Breadcrumb-->
+                <div class="breadcrumb-holder container-fluid">
+                    <ul class="breadcrumb">
+                        <li class="breadcrumb-item">
+                            <a href="index.html">Início</a>
+                        </li>
+                        <li class="breadcrumb-item active">Cadastro de pacientes </li>
+                    </ul>
+                </div>
+                <section class="tables">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="card">
+                                    <div class="card-header d-flex align-items-center">
+                                        <h3 class="h4">Formulário de cadastro</h3>
+                                    </div>
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>
+                                                <a href="#formPaciente" aria-expanded="false" data-toggle="collapse">
+                                                    Informações sobre o paciente </a>
+                                                <ul id="formPaciente" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados do paciente</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-3">
+                                                                            <label>CPF</label>
+                                                                            <input id="inputCPF" type="text" name="cpf" placeholder="XXX.XXX.XXX-XX" onkeypress="mascara(this, '###.###.###-##')" maxlength="14" class="form-control form-control-success cpf-mask">
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <label>Vínculo com a UFRN</label>
+                                                                            <label id="labelVinculo" class="form-control form-control-success">Sem vínculo</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="form-row">
+                                                                        
+                                                                        <div class="form-group  col-md-12">
+                                                                              <label>Nome</label>
+                                                                              <input id="inputHorizontalSuccess" type="text" placeholder="Nome" class="form-control form-control-success">
+                                                                        </div>
+                                                                      </div>
+
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Gostaria de usar o nome social?</label>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input onclick="habilitaNomeSocial('radioNomeSocialSim', 'inputNomeSocial', 'SIM')" type="radio" id="radioNomeSocialSim" name="radio" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioNomeSocialSim">Sim</label>
+                                                                            </div>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input onclick="habilitaNomeSocial('radioNomeSocialNao', 'inputNomeSocial', 'NAO')" type="radio" id="radioNomeSocialNao" name="radio" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioNomeSocialNao">Não</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Nome Social</label>
+                                                                            <input disabled='true' id="inputNomeSocial" type="text" placeholder="Nome Social" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-4">
+                                                                            <label>Data de nascimento</label>
+                                                                            <input id="inputNascimento" type="date" placeholder="DD/MM/AAAA" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-4">
+                                                                            <label>Identidade</label>
+                                                                            <input id="inputIdentidade" name="rg" placeholder="XXX.XXX.XXX" onkeypress="mascara(this, '###.###.###')" maxlength="11" type="text" placeholder="Identidade" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-4">
+                                                                            <label>Órgão expedidor</label>
+                                                                            <input id="inputOrgaoExpedidor" type="text" placeholder="Órgão expedidor" class="form-control form-control-success">
+                                                                        </div>
+                                                                        
+                                                                        
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-4">
+                                                                            <label>Sexo</label>
+                                                                            <select name="account" class="form-control">
+                                                                                <option>Masculino</option>
+                                                                                <option>Feminino</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-1">
+                                                                            <label>Idade</label>
+                                                                            <input id="inputIdade" type="number" placeholder="00" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <label>Cor/Raça</label>
+                                                                            <select name="account" class="form-control">
+                                                                                <option>Branca</option>
+                                                                                <option>Negra</option>
+                                                                                <option>Amarela</option>
+                                                                                <option>Indígena</option>
+                                                                                <option>Não declarada</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-4">
+                                                                            <label>Estado civil</label>
+                                                                            <select name="account" class="form-control">
+                                                                                <option>Solteiro (a)</option>
+                                                                                <option>Casado (a)</option>
+                                                                                <option>Divorciado (a)</option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Deseja prestar informação sobre gênero?</label>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input onclick="habilitaGenero('radioGeneroSim', 'inputGenero', 'SIM')" type="radio" id="radioGeneroSim" name="radio1" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioGeneroSim">Sim</label>
+                                                                            </div>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input onclick="habilitaGenero('radioGeneroNao', 'inputGenero', 'NAO')" type="radio" id="radioGeneroNao" name="radio1" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioGeneroNao">Não</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Gênero</label>
+                                                                            <input disabled='true' id="inputGenero" type="text" placeholder="Gênero" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>             
+                                                
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-5">
+                                                                            <label>Cartão do SUS</label>
+                                                                            <input id="inputSUS" type="text" placeholder="Número do cartão do SUS" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-7">
+                                                                            <label>Unidade básica de saúde da qual é usuário</label>
+                                                                            <input id="inputUBS" type="text" placeholder="Unidade básica de saúde da qual é usuário" class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#formEndereco" aria-expanded="false" data-toggle="collapse">
+                                                    Informações de endereço </a>
+                                                <ul id="formEndereco" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados de endereço</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                            <div class="form-group col-md-3">
+                                                                                <label>CEP</label>
+                                                                                <input id="inputCEP" type="text" placeholder="XXXXX-XXX" name="cep" onkeypress="mascara(this, '#####-###')" maxlength="9" class="form-control form-control-success">
+                                                                            </div>
+                                                                            <div class="form-group col-md-9">
+                                                                                <label>Logradouro</label>
+                                                                                <input id="inputLogradouro" type="text" placeholder="Rua/avenida" class="form-control form-control-success">
+                                                                            </div>                                                                        
+                                                                        </div>
+                                                                        <div class="form-row"><div class="form-group col-md-4">
+                                                                                <label>Bairro</label>
+                                                                               <input id="inputBairro" type="text" placeholder="Bairro" class="form-control form-control-success">
+                                                                           </div>
+                                                                           <div class="form-group col-md-1">
+                                                                               <label>UF</label>
+                                                                               <select name="uf" class="form-control">
+                                                                                <option>AC - Acre</option>
+                                                                                <option>AL - Alagoas</option>
+                                                                                <option>AM - Amazonas</option>
+                                                                                <option>AP - Amapá</option>
+                                                                                <option>BA - Bahia</option>
+                                                                                <option>CE - Ceará</option>
+                                                                                <option>DF - Distrito Federal</option>
+                                                                                <option>ES - Espírito Santo</option>
+                                                                                <option>GO - Goiás</option>
+                                                                                <option>MA - Maranhão</option>
+                                                                                <option>MG - Minas Gerais</option>
+                                                                                <option>MS - Mato Grosso do Sul</option>
+                                                                                <option>MT - Mato Grosso</option>
+                                                                                <option>PA - Pará</option>
+                                                                                <option>PB - Paraíba</option>
+                                                                                <option>PE - Pernambuco</option>
+                                                                                <option>PI - Piauí</option>
+                                                                                <option>PR - Paraná</option>
+                                                                                <option>RJ - Rio de Janeiro</option>
+                                                                                <option>RN - Rio Grande do Norte</option>
+                                                                                <option>RO - Rondônia</option>
+                                                                                <option>RR - Roraima</option>
+                                                                                <option>RS - Rio Grande do Sul</option>
+                                                                                <option>SC - Santa Catarina</option>
+                                                                                <option>SE - Sergipe</option>
+                                                                                <option>SP - São Paulo</option>
+                                                                                <option>TO - Tocantins</option>
+                                                                                </select>
+                                                                               
+                                                                           </div>
+                                                                           <div class="form-group col-md-4">
+                                                                               <label>Cidade</label>
+                                                                               <input id="inputCidade" type="text" placeholder="Cidade" class="form-control form-control-success">
+                                                                           </div>                            
+                                                                           <div class="form-group col-md-3">
+                                                                               <label>País</label>
+                                                                               <input id="inputPais" type="text" placeholder="País" class="form-control form-control-success">
+                                                                           </div>
+                                                                        </div>
+                                                                    
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#formContato" aria-expanded="false" data-toggle="collapse">
+                                                    Informações de contato </a>
+                                                <ul id="formContato" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados de contato</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-3">
+                                                                            <label>Telefone 1</label>
+                                                                            <input id="inputTelefone" type="text" placeholder="(XX) XXXXX-XXXX" name="telefone" onkeypress="mascaraTelefone(this)" maxlength="15" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                            <label>Telefone 2</label>
+                                                                            <input id="inputTelefone2" type="text" placeholder="(XX) XXXXX-XXXX" name="telefone" onkeypress="mascaraTelefone(this)" maxlength="15" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-6">
+                                                                            <label>E-mail</label>
+                                                                            <input id="inputEmail" type="email" placeholder="E-mail " class="form-control form-control-success">
+                                                                        </div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+
+
+                                            <li>
+                                                <a href="#formSocioeconomico" aria-expanded="false" data-toggle="collapse">
+                                                    Informações socioeconômicas </a>
+                                                <ul id="formSocioeconomico" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados socioeconômicos do paciente</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-3">
+                                                                              <label>Escolaridade</label>
+                                                                              <select onchange="habilitaAnosEscolaridade('selectEscolaridade','inputAnos');" id="selectEscolaridade" name="account" class="form-control">
+                                                                                <option>Nenhuma</option>
+                                                                                <option>Fundamental incompleto</option>
+                                                                                <option>Fundamental completo</option>
+                                                                                <option>Médio incompleto</option>
+                                                                                <option>Médio completo</option>
+                                                                                <option>Superior incompleto</option>
+                                                                                <option>Superior completo</option>
+                                                                                <option>Pós-graduação completa</option>
+                                                                                <option>Pós-graduação incompleta</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-1">
+                                                                          <label>Anos</label>
+                                                                          <input id="inputAnos" disabled="true" type="number" placeholder="Anos" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-4">
+                                                                          <label>Curso</label>
+                                                                          <input id="inputCurso" type="text" placeholder="Curso" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-4">
+                                                                          <label>Profissão</label>
+                                                                          <input id="inputProfissão" type="text" placeholder="Profissão" class="form-control form-control-success">
+                                                                        </div>
+                                                                      </div>
+
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-2">
+                                                                            <label>Ocupação atual</label>
+                                                                            <input id="inputOcupacao" type="text" placeholder="Ocupação atual" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-5">
+                                                                              <label>Qtde. de pessoas que moram na residência?</label>
+                                                                              <input id="inputQtdPessoas" type="number" placeholder="Qtde. de pessoas que moram na residência" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-3">
+                                                                          <label>Quantas trabalham?</label>
+                                                                          <input id="inputQtdTrabalham" type="number" placeholder="Quantas trabalham ?" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-2">
+                                                                            <label>Renda total</label>
+                                                                            <input id="inputRenda" type="text" placeholder="Renda total" class="form-control form-control-success">
+                                                                        </div>
+                                                                      </div>
+
+                                                                      <div class="form-row">
+                                                                        <div class="form-group col-md-12">
+                                                                            <label>Possui algum benefício social?</label>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input onclick="habilitaBeneficioSocial('radioBeneficioSocialSim', 'inputBeneficio', 'SIM')" type="radio" id="radioBeneficioSocialSim" name="radio2" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioBeneficioSocialSim">Sim</label>
+                                                                            </div>
+                                                                            <div class="custom-control custom-radio custom-control-inline">
+                                                                                <input onclick="habilitaBeneficioSocial('radioBeneficioSocialNao', 'inputBeneficio', 'NAO')" type="radio" id="radioBeneficioSocialNao" name="radio2" class="custom-control-input">
+                                                                                <label class="custom-control-label" for="radioBeneficioSocialNao">Não</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="form-row">               
+                                                                        <div class="form-group col-md-12" id="inputBeneficio"></div>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+
+                                            <li>
+                                                <a href="#formResponsavel" aria-expanded="false" data-toggle="collapse">
+                                                    Informações sobre o responsável </a>
+                                                <ul id="formResponsavel" class="collapse list-unstyled ">
+                                                    <div class="col-lg-12">
+                                                        <div class="card">
+                                                            <div class="card-header d-flex align-items-center">
+                                                                <h3 class="h4">Informe os dados do responsável pelo paciente</h3>
+                                                            </div>
+                                                            <div class="card-body">
+                                                                <form>
+                                                                    <div class="form-row">
+                                                                        <div class="form-group col-md-4">
+                                                                              <label>Relação</label>
+                                                                              <select name="account" class="form-control">
+                                                                                <option>Familiar</option>
+                                                                                <option>Profissional</option>
+                                                                                <option>Tutor</option>
+                                                                                <option>Amigo</option>
+                                                                                <option>Própria pessoa</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="form-group col-md-8">
+                                                                          <label>Nome </label>
+                                                                          <input id="inputResponsavel" type="text" placeholder="Nome do responsável" class="form-control form-control-success">
+                                                                        </div>
+                                                                      </div>
+
+                                                                      <div class="form-row">
+                                                                        <div class="form-group col-md-4">
+                                                                              <label>Identidade</label>
+                                                                              <input id="inputIdResponsavel" type="text" placeholder="Identidade do responsável" class="form-control form-control-success">
+                                                                        </div>
+                                                                        <div class="form-group col-md-5">
+                                                                          <label>Órgão expedidor</label>
+                                                                          <input id="inputOrgaoExpResponsavel" type="text" placeholder="Órgão expedidor do RG do responsável" class="form-control form-control-success">
+                                                                        </div>
+                                                                      </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="line"></div>
+                    <div class="form-group row">
+                        <div class="col-sm-4 offset-sm-9">
+                            <button type="submit" class="btn btn-secondary">Cancelar</button>
+                            <button type="submit" class="btn btn-primary">Salvar</button>
+                        </div>
+                    </div>
+                </section>
+                <!-- Page Footer-->
+              <footer class="main-footer">
+                <div class="container-fluid">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <p>SigSaúde &copy; 2018</p>
+                    </div>
+                    <div class="col-sm-6 text-right">          
+                     <!-- <p>Design by <a href="https://bootstrapious.com/admin-templates" class="external">Bootstrapious</a></p> -->
+                      <!-- Please do not remove the backlink to us unless you support further theme's development at https://bootstrapious.com/donate. It is part of the license conditions. Thank you for understanding :)-->
+                    </div>
+                  </div>
+                </div>
+              </footer>
+            </div>
+        </div>
+    </div>
+    <!-- JavaScript files-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/popper.js/umd/popper.min.js"> </script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
+    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="vendor/jquery-validation/jquery.validate.min.js"></script>
+    <script language="JavaScript">
+         function mascara(t, mask)
+         {
+             var i = t.value.length;
+             var saida = mask.substring(1,0);
+             var texto = mask.substring(i);
+            if (texto.substring(0,1) != saida)
+            {
+                t.value += texto.substring(0,1);
+            }
+         }
+         function mascaraTelefone(t){
+             var i = t.value.length;
+             var valor = t.value;
+             if(i == 0){
+                 t.value = "(" + valor;
+             } else if(i == 3){
+                 t.value = valor + ") ";
+             } else if(i == 10){
+                 t.value = valor + "-";
+             }
+         }
+    </script>
+    <script language="JavaScript">
+        function habilitaAnosEscolaridade(inputEscolaridade, inputAnos){
+            var inputAnos = document.getElementById(inputAnos);
+            var inputEscolaridade = document.getElementById(inputEscolaridade);
+            var escolaridade = inputEscolaridade.value;
+            var compara_incompleto = escolaridade.search("incompleto");
+            var compara_incompleta = escolaridade.search("incompleta");
+            if(compara_incompleta > 0 || compara_incompleto > 0){
+                inputAnos.disabled = false;
+            } else {
+                inputAnos.value = "";
+                inputAnos.disabled = true;
+            }
+        }
+        function habilitaNomeSocial(inputRadio, inputNomeSocial, valor){
+            var inputRadio = document.getElementById(inputRadio);
+            var inputNomeSocial = document.getElementById(inputNomeSocial);
+            if(inputRadio.value == 'on' && valor == 'SIM'){
+                inputNomeSocial.disabled = false;
+            } else if (inputRadio.value == 'on' && valor == 'NAO'){
+                inputNomeSocial.value = "";
+                inputNomeSocial.disabled = true;
+            }
+        }
+        function habilitaGenero(inputRadio, inputGenero, valor){
+            var inputRadio = document.getElementById(inputRadio);
+            var inputGenero = document.getElementById(inputGenero);
+            if(inputRadio.value == 'on' && valor == 'SIM'){
+                inputGenero.disabled = false;
+            } else if (inputRadio.value == 'on' && valor == 'NAO'){
+                inputGenero.value = "";
+                inputGenero.disabled = true;
+            }
+        }
+        function habilitaBeneficioSocial(inputRadio, inputBeneficio, valor){
+            var inputRadio = document.getElementById(inputRadio);
+            var inputBeneficio = document.getElementById(inputBeneficio);
+            if(inputRadio.value == 'on' && valor == 'SIM'){                
+                var conteudoDiv = '<label>Qual benefício?</label>';
+                conteudoDiv += '<select name="account" class="form-control selectpicker" data-live-search="true" data-live-search-style="startsWith">';
+                conteudoDiv += '<option>Bolsa família</option>';
+                conteudoDiv += '<option>Minha casa, minha vida</option>';
+                conteudoDiv += '<option>Fomento</option>';
+                conteudoDiv += '<option>Bolsa verde</option>';
+                conteudoDiv += '<option>Outros benefícios</option>';
+                conteudoDiv += '</select>';
+                inputBeneficio.innerHTML = conteudoDiv;
+            } else if (inputRadio.value = 'on' && valor == 'NAO'){
+                var conteudoDiv = "";
+                inputBeneficio.innerHTML = conteudoDiv;
+            }
+        }
+    </script>
+    <!-- Main File-->
+    <script src="js/front.js"></script>
+</body>
+
+</html>
